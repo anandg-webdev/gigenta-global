@@ -1,0 +1,64 @@
+.nav-cont {
+
+    @apply bg-black px-[10px];
+    display: flex;
+    width: 100vw;
+}
+
+.nav-title-cont {
+    @apply flex;
+}
+
+.nav-title-cont {
+    position: relative;
+}
+
+
+.nav-title-cont,.nav-menu-cont {
+    @apply w-[50%];
+}
+
+
+.nav-title-first-letter-box{
+    @apply text-blue-400 font-bold text-8xl;
+}
+
+
+
+.nav-title-second-word-boxes {
+    @apply flex flex-col justify-around;
+}
+
+
+.nav-title-second-word-box1, .nav-title-second-word-box2 {
+    @apply text-blue-400 font-bold text-3xl p-0;
+}
+
+.nav-title-second-word-box1 {
+    position: absolute;
+    top: 10px;
+}
+
+.nav-title-second-word-box2 {
+    position: absolute;
+    bottom: 10px;
+}
+
+.nav-menu-icon {
+    @apply text-blue-400 font-bold text-4xl;
+    
+}
+
+/*
+.nav-menu-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+*/
+
+
+.nav-menu-cont{
+    @apply flex justify-end items-center;
+}
