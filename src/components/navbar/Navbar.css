@@ -1,64 +1,82 @@
-.nav-cont {
+.navbar {
+    @apply bg-black text-blue-400;
+}
 
-    @apply bg-black px-[10px];
-    display: flex;
-    width: 100vw;
+.nav-cont {
+    @apply px-3 py-2;
+    box-shadow: 0 0 1px white inset;
+}
+
+.nav-title-and-menu-icon {
+    @apply flex justify-between;
 }
 
 .nav-title-cont {
     @apply flex;
 }
 
-.nav-title-cont {
-    position: relative;
+
+.nav-title-first-letter-box {
+    @apply font-bold text-6xl;
+    align-content: center;
 }
 
-
-.nav-title-cont,.nav-menu-cont {
-    @apply w-[50%];
+.nav-title-first-letter{
+    text-shadow: 1px 1px 4px #ff0000, -1px -1px 4px #ff0000;
 }
-
-
-.nav-title-first-letter-box{
-    @apply text-blue-400 font-bold text-8xl;
-}
-
-
 
 .nav-title-second-word-boxes {
-    @apply flex flex-col justify-around;
+    @apply p-0 m-0 flex flex-col justify-around font-bold relative;
 }
 
 
-.nav-title-second-word-box1, .nav-title-second-word-box2 {
-    @apply text-blue-400 font-bold text-3xl p-0;
+
+
+
+
+.nav-title-second-word-box {
+    @apply text-xl absolute;
 }
+
+.nav-title-second-word-box h4{
+    text-shadow: 1px 1px 4px #ff0000, -1px -1px 4px #ff0000;
+}
+
 
 .nav-title-second-word-box1 {
-    position: absolute;
-    top: 10px;
+    @apply top-1 text-red-400;
 }
+
+
 
 .nav-title-second-word-box2 {
-    position: absolute;
-    bottom: 10px;
+    @apply bottom-2 mt-1 text-green-400;
 }
 
-.nav-menu-icon {
-    @apply text-blue-400 font-bold text-4xl;
-    
+
+
+
+
+
+.nav-menu-cont {
+    @apply text-2xl;
+    align-content: center;
 }
 
-/*
-.nav-menu-cont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
+.nav-menu-list {
+    @apply px-2 m-1 bg-black font-bold absolute right-0;
 }
-*/
+
+.nav-menus {
+    display: block;
+}
+
+.nav-menus li{
+    @apply mt-2 mb-2 p-1;
+    border: 1px solid grey;
+}
 
 
-.nav-menu-cont{
-    @apply flex justify-end items-center;
+.nav-menus.show {
+    display: none;
 }
